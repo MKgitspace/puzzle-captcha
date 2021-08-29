@@ -10,7 +10,7 @@ import { PuzzleCaptchaModule } from 'puzzle-captcha';
   ],
   imports: [
     BrowserModule,
-    PuzzleCaptchaModule
+    PuzzleCaptchaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

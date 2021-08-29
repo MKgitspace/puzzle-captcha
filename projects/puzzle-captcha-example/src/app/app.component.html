@@ -1,6 +1,11 @@
 <!-- <mk-puzzle-captcha></mk-puzzle-captcha> -->
-<div class="captcha" style="background-color: greenyellow;">
-    <div>
+<div class="captcha" style="background: linear-gradient(45deg, red, blue);">
+    <div *ngIf="!captcha_verification">
         <mk-puzzle-captcha (verifiyhandler)="received_captcha_event($event)"></mk-puzzle-captcha>
+    </div>
+    <div *ngIf="captcha_verification">
+        <div>
+            <p class="py-4" style="font: 700;font-size: 50px;text-align: center;">Authenticatied</p>
+        </div>
     </div>
 </div>

@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   captcha_verification: boolean = false;
   
-  constructor() {}
+  constructor(
+  ) {}
   ngOnInit() {}
 
   show_captcha() {
@@ -18,6 +19,6 @@ export class AppComponent {
   // Recevied captcha authantication event function verifiy: success/failed
   received_captcha_event(verify: String) {
     console.log(verify);
-    this.captcha_verification = (verify == "success") ? false : true;
+    this.captcha_verification = (verify == "success") ? true : false;
   }
 }
